@@ -1,0 +1,78 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Indie+Flower&family=Quicksand:wght@300&family=Rubik:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(#7ED7C1,#F0DBAF);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    display: flex;
+}
+/* .grand *{
+    border: 2px solid black;
+} */
+.grand{
+    width: 40%;
+    height: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    min-width: 300px;
+    min-height: 200px;
+}
+.buts,.time{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+   
+}
+
+.buts{
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+    gap: 10px;
+}
+.time{
+    font-size: 4rem;
+   font-family:'Rubik', sans-serif; ;    
+   color: #B06161;
+   width: 40%;
+   margin: auto;
+}
+.time p span{
+    margin: 0 0 0 2px;
+}
+.buts *{
+    /* border: 2px solid black; */
+padding: 14px 35px;
+cursor: pointer;
+background-color:#DC8686 ;
+border-radius: 10px;
+box-shadow: 0 0 5px black;
+border: none;
+color: aliceblue;
+font-family:'IBM Plex Mono', monospace;
+font-weight: bolder;
+}
+.buts p:hover{
+background-color: #F0DBAF;
+color: black;
+}
+@media (max-width:350px) {
+    .buts{
+        flex-direction: column;
+        text-align: center;
+    }
+    .buts p{
+        width: 180px;
+       margin: auto;
+    }
+    
+}
